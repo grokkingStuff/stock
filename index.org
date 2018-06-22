@@ -1,0 +1,423 @@
+#+TITLE: Parsing Market data from Dubai Stock Exchange
+#+AUTHOR: Vishakh Pradeep Kumar
+ 
+
+* TODO Vocabulary
+Should be filled in. Should define what stocks, equities, futures and bonds are. Should also define the different terms in the data we're trying to parse. When it comes to LP, don't sweat it too much since the code will be quite readable.
+
+* Obtaining HTML from market data sources                              :html:scraping:
+We'll be parsing the live feeds provided by these markets on their individual websites; there's usually a fifteen minute delay but there isn't any information that's missing. This should allow us to ru nthis script regardless of whether the user has an account with those particular markets
+
+- *Why are we using selenium?*
+
+  The website we're trying to parse has dynamic content (it's live data that refreshes every 15 minutes), which requires us to open a webbrowser and actually render the page. Selenium allows us to open a webbrowser and actually render said dynamic content. Without selenium, we'd be stuck with a (rather prettily designed) html page without information.
+
+- *Why does this open a web browser?*
+
+  Selenium requires an actual webbrowser to do stuff. I'll change to a better solution soon but it's Firefox for now. Phantomjs seems to be a good option.
+
+#+NAME: get_html_source
+#+CAPTION: Function to take html content from a website
+#+BEGIN_SRC ipython :session :results raw drawer
+def get_html_source(path):
+    # Import a web browser
+    from selenium import webdriver
+
+    # Open the webbrowser with a page
+    driver = webdriver.Firefox()
+    driver.get(path)
+
+    # Wait for the webbrowser to fully render the page. Sleep for five seconds
+    import time
+    time.sleep(3)
+
+    # Obtain html source from window
+    html = driver.page_source
+
+    return html
+#+END_SRC
+
+#+RESULTS: get_html_source
+:RESULTS:
+# Out[84]:
+:END:
+
+- *Which websites are we taking information from?*
+
+  + *Nasdaq Dubai*, available [[http://www.nasdaqdubai.com/marketdata/#/equities][here]]. They have three main types of information - equities and funds, futures, islamic bonds and bonds. Unfortunately, I could not find dividends information here.
+    #+NAME: main
+    #+BEGIN_SRC ipython :session :results raw drawer :noweb yes
+    nasdaq_equities_html = get_html_source("http://www.nasdaqdubai.com/marketdata/#/equities")
+    nasdaq_futures_html = get_html_source("http://www.nasdaqdubai.com/marketdata/#/futures")
+    nasdaq_bonds_html = get_html_source("http://www.nasdaqdubai.com/marketdata/#/sukuks")
+    #+END_SRC
+
+    #+RESULTS: main
+    :RESULTS:
+    # Out[85]:
+    :END:
+
+  + *Dubai Financial Market*, available [[https://marketwatch.dfm.ae/?isRedirected=true][here]]. They have equities and exchange traded funds. They also have information from Nasdaq Dubai - equities, bonds and sukuks. They have dividends information available [[https://www.dfm.ae/investors/dividend-distribution][here.]]
+    #+NAME: main
+    #+BEGIN_SRC ipython :session :results raw drawer :noweb yes
+    dfm_equities_html = get_html_source("https://marketwatch.dfm.ae/?isRedirected=true")
+    dfm_dividends_html = get_html_source("https://www.dfm.ae/investors/dividend-distribution")
+    #+END_SRC
+
+* Parsing html                                                 :html:parsing:
+
+- *How are we parsing html?*
+
+  BeautifulSoup4. It's perfect for a quick and dirty script like this and it's not too fragile. Certainly better than regular expressions.
+
+- *Why are there similar codeblocks in this codebase? Shouldn't you abstract it all in one function?*
+
+  They're pretty similar and could be abstracted. But I'm too lazy to think about how to accomodate the tiny differences so I'm gonna go ahead and copy-paste stuff all over the place. This is going to be hel to redo if any of these websites change their designs a lot.
+
+** NASDAQ Dubai
+*** Parse NASDAQ Dubai Equities HTML                          :code:equities:
+ #+NAME: parse_nasdaq_equities_html
+ #+CAPTION: Function to parse the html content of NASDAQ Dubai's equities page.
+  #+BEGIN_SRC ipython :session :results raw drawer :exports both :results verbatim :noweb yes
+ def parse_nasdaq_equities_html(html):
+     import bs4
+
+     dictionary = {"Company Name":[],
+                   "Code":[],
+                   "Currency":[],
+                   "Previous Close":[],
+                   "Open":[],
+                   "High":[],
+                   "Low":[],
+                   "Bid Quantity":[],
+                   "Bid":[],
+                   "Offer":[],
+                   "Offer Quantity":[],
+                   "Last Traded Price":[],
+                   "Percentage Change":[]}
+
+
+     soup = bs4.BeautifulSoup(html,"html5lib")
+     tables = [ soup.find_all('table')[-1] ]
+     for table in tables:
+         print("boop")
+         for tbody in table.select('tbody'):
+             for tr in tbody.select('tr'):
+
+                 # Company Information
+                 full_name = tr.select('td[class="full_name ng-binding"]')[0].getText().split('\n')[0]
+                 code = tr.select('td[class="code ng-binding"]')[0].getText()
+                 dictionary["Company Name"].append(full_name)
+                 dictionary["Code"].append(code)
+
+
+                 # Yesterday's price and highs and lows
+                 currency = tr.select('td[class="curr ng-binding"]')[0].getText()
+                 previous_close = float(tr.select('td[class="previous_close ng-binding"]')[0].getText())
+                 open_ = float(tr.select('td[class="open ng-binding"]')[0].getText())
+                 high = float(tr.select('td[class="high ng-binding"]')[0].getText())
+                 low = float(tr.select('td[class="low ng-binding"]')[0].getText())
+                 dictionary["Currency"].append(currency)
+                 dictionary["Previous Close"].append(previous_close)
+                 dictionary["Open"].append(open_)
+                 dictionary["High"].append(high)
+                 dictionary["Low"].append(low)
+                
+
+                 # Bids and Offers
+                 bid_qty = (tr.select('td[class="bid_qty ng-binding"]')[0].getText())
+                 bid = (tr.select('td[class="bid ng-binding"]')[0].getText())
+                 offer = (tr.select('td[class="offer ng-binding"]')[0].getText())
+                 offer_qty = (tr.select('td[class="offer_qty ng-binding"]')[0].getText())
+                 dictionary["Bid Quantity"].append(bid_qty)
+                 dictionary["Bid"].append(bid)
+                 dictionary["Offer"].append(offer)
+                 dictionary["Offer Quantity"].append(offer_qty)
+               
+
+  
+                 # Last traded price
+                 last_traded_price = float(tr.select('td[class="last_traded_price ng-binding"]')[0].getText())
+                 percentage_change = float(tr.select('td[class="percentage_change ng-binding"]')[0].getText())
+                 dictionary["Last Traded Price"].append(last_traded_price)
+                 dictionary["Percentage Change"].append(percentage_change)
+                
+
+     # Now it's time to convert this dictionary into a pandas series
+     import pandas as pd
+     return pd.DataFrame.from_dict(dictionary)
+ #+END_SRC
+
+ #+RESULTS: parse_nasdaq_equities_html
+ : None
+
+*** COMMENT Parse NASDAQ Dubai Futures HTML                    :code:futures: 
+ #+NAME: parse_nasdaq_futures_html
+ #+CAPTION: Function to parse the html content of NASDAQ Dubai's futures page.
+ #+BEGIN_SRC ipython :session :results raw drawer :exports both :results verbatim :noweb yes
+ def parse_nasdaq_futures_html(html):
+     import bs4
+
+     dictionary = {"Company Name":[],
+                   "Code":[],
+                   "Currency":[],
+                   "Previous Close":[],
+                   "Open":[],
+                   "High":[],
+                   "Low":[],
+                   "Bid Quantity":[],
+                   "Bid":[],
+                   "Offer":[],
+                   "Offer Quantity":[],
+                   "Last Traded Price":[],
+                   "Percentage Change":[]}
+
+
+     soup = bs4.BeautifulSoup(html,"html5lib")
+     tables = soup.find_all('table')
+
+     for table in tables:
+         for tbody in table.select('tbody'):
+             for tr in tbody.select('tr'):
+
+                 # Company Information
+                 full_name = tr.select('td[class="full_name ng-binding"]')[0].getText().split('\n')[0]
+                 code = tr.select('td[class="code ng-binding"]')[0].getText()
+                 dictionary["Company Name"].append(full_name)
+                 dictionary["Code"].append(code)
+
+
+                 # Yesterday's price and highs and lows
+                 currency = tr.select('td[class="curr ng-binding"]')[0].getText()
+                 previous_close = float(tr.select('td[class="previous_close ng-binding"]')[0].getText())
+                 open_ = float(tr.select('td[class="open ng-binding"]')[0].getText())
+                 high = float(tr.select('td[class="high ng-binding"]')[0].getText())
+                 low = float(tr.select('td[class="low ng-binding"]')[0].getText())
+                 dictionary["Currency"].append(currency)
+                 dictionary["Previous Close"].append(previous_close)
+                 dictionary["Open"].append(open_)
+                 dictionary["High"].append(high)
+                 dictionary["Low"].append(low)
+                
+
+                 # Bids and Offers
+                 bid_qty = (tr.select('td[class="bid_qty ng-binding"]')[0].getText())
+                 bid = (tr.select('td[class="bid ng-binding"]')[0].getText())
+                 offer = (tr.select('td[class="offer ng-binding"]')[0].getText())
+                 offer_qty = (tr.select('td[class="offer_qty ng-binding"]')[0].getText())
+                 dictionary["Bid Quantity"].append(bid_qty)
+                 dictionary["Bid"].append(bid)
+                 dictionary["Offer"].append(offer)
+                 dictionary["Offer Quantity"].append(offer_qty)
+               
+
+  
+                 # Last traded price
+                 last_traded_price = float(tr.select('td[class="last_traded_price ng-binding"]')[0].getText())
+                 percentage_change = float(tr.select('td[class="percentage_change ng-binding"]')[0].getText())
+                 dictionary["Last Traded Price"].append(last_traded_price)
+                 dictionary["Percentage Change"].append(percentage_change)
+                
+
+     # Now it's time to convert this dictionary into a pandas series
+     import pandas as pd
+     return pd.DataFrame.from_dict(dictionary)
+ #+END_SRC
+
+ #+RESULTS: parse_nasdaq_futures_html
+ : None
+** Dubai Financial Market
+*** Parse DFM Summary table HTML                              :code:equities:
+
+  - Top Table
+    Top table refers to the little summary tables that they have on top of the page
+
+    First table is "Most Active by Value"
+    Second table is "Most Active by Volume"
+    Third table is "Gainers"
+    Fourth table is "Losers"
+
+  #+NAME: parse_dfm_equities_html
+  #+CAPTION: Function to parse the html content of NASDAQ Dubai's equities page.
+  #+BEGIN_SRC ipython :session :results raw drawer :exports both :results verbatim :noweb yes
+  def parse_dfm_equities_html(html):
+      ans = []
+      ans.extend(
+                 parse_dfm_equities_top_tables_html(html)
+                )
+      parse_dfm_equities_sector_tables_html(html)
+      parse_dfm_equities_tables_html(html)
+      return ans
+  #+END_SRC
+
+  #+RESULTS: parse_dfm_equities_html
+  :RESULTS:
+  # Out[224]:
+  :END:
+
+**** Function to parse top tables 
+  #+NAME: parse_dfm_equities_top_tables_html
+  #+CAPTION: Function to parse the top tables in the DFM Market data website
+  #+BEGIN_SRC ipython :session :results raw drawer :exports both :results verbatim :noweb yes
+  def parse_dfm_equities_top_tables_html(html):
+      import bs4
+
+      dictionary = {"Code":[],
+                    "Value":[],
+                    "Volume":[],
+                    "Price":[],
+                    "Price Change":[],
+#                    "Price Change Percentage":[],
+                    }
+      ans = []
+
+      soup = bs4.BeautifulSoup(html,"html5lib")
+      tables = soup.find_all('table')
+      #print(tables[0])
+
+      # The class "top table" refers to the small tables show the sticker tape
+      for table in soup.select('table[class="top table"]'):
+          for tbody in table.select('tbody'):
+              for tr in tbody.select('tr'):
+                  #print(tr)
+
+                  # Company Information
+                  code = ' '.join(tr.select('td')[0].getText().split())
+                  dictionary["Code"].append(code)
+
+                  # Volume and Value
+                  value = ' '.join((tr.select('td[class="noalign ltr "]')[0].getText().split()))
+                  volume = ' '.join((tr.select('td[class="noalign ltr"]')[0].getText().split()))                  
+                  dictionary["Value"].append(value)
+                  dictionary["Volume"].append(volume)
+
+                  # Price Information
+                  price = ' '.join(tr.select('td[class="ltr"]')[0].getText().split())
+                  priceChange = ' '.join((tr.select('td[class="decrease change-value ltr"]') + tr.select('td[class="increase change-value ltr"]'))[0].getText().split())                  
+ #                 priceChangePercentage = ' '.join((tr.select('td[class="decrease ltr change-perc last-child"]') + tr.select('td[class="increase ltr change-perc last-child"]'))[0].getText().split())
+                  dictionary["Price"].append(price)
+                  dictionary["Price Change"].append(priceChange)
+ #                 dictionary["Price Change Percentage"].append(priceChangePercentage)
+
+          # Convert dictionary to pandas template
+          import pandas as pd
+          stuff = pd.DataFrame.from_dict(dictionary)
+
+          ans.append(stuff)
+
+          dictionary['Code'] = []
+          dictionary['Value'] = []
+          dictionary['Volume'] = []
+          dictionary['Price'] = []
+          dictionary['Price Change'] = []
+      return ans
+
+  #+END_SRC
+
+  #+RESULTS: parse_dfm_equities_top_tables_html
+  :RESULTS:
+  # Out[205]:
+  :END:
+
+**** Function to parse sector tables 
+  #+NAME: parse_dfm_equities_sector_tables_html
+  #+CAPTION: Function to parse the sector tables in the DFM Market data website
+  #+BEGIN_SRC ipython :session :results raw drawer :exports both :results verbatim :noweb yes
+  def parse_dfm_equities_sector_tables_html(html):
+      import bs4
+
+      dictionary = {"Name":[],
+                    "Volume":[],
+                    "Index Value":[],
+                    "Price Change":[],
+                    "Price Change Percentage":[],
+                    }
+      ans = []
+
+      soup = bs4.BeautifulSoup(html,"html5lib")
+      tables = soup.find_all('table')
+
+      # The name "sector table" refers to the small table show the general performance of different sectors
+      for tbody in tables[4].select('tbody'):
+          for tr in tbody.select('tr'):
+              print(' '.join(tr.select('td')[0].getText().split()))
+              print(' '.join(tr.select('td[class="noalign ltr"]')[0].getText().split()))
+              print(' '.join((tr.select('td'))[2].getText().split()))
+              print(' '.join(tr.select('td')[3].getText().split()))
+              print((' '.join(tr.select('td')[4].getText().split()))[1:-2])
+  #+END_SRC
+
+  #+RESULTS: parse_dfm_equities_sector_tables_html
+  :RESULTS:
+  # Out[286]:
+  :END:
+
+**** Function to parse tables
+  #+BEGIN_SRC ipython :session :results raw drawer :exports both :results verbatim :noweb yes  
+  def parse_dfm_equities_tables_html(html):
+      import bs4
+      dictionary = {"Company Name":[],
+                    "Code":[],
+                    "Currency":[],
+                    "Previous Close":[],
+                    "Open":[],
+                    "High Price":[],
+                    "Low Price":[],
+                    "Bid Volume":[],
+                    "Bid":[],
+                    "Offer":[],
+                    "Offer Volume":[],
+                    "Current Price":[],
+                    "Price Change":[],
+                    "Price Change Percentage":[],
+                    "Daily Volume":[],
+                    "Daily Value":[],
+                    "Number of trades":[],
+                    "52 High":[],
+                    "52 Low":[]
+                    }
+
+      soup = bs4.BeautifulSoup(html,"html5lib")
+      tables = soup.find_all('table')
+      print(tables)
+
+      # The class "top table" refers to the small tables show the sticker tape
+      #for table in soup.select('table'):
+      #    for tbody in table.select('tbody'):
+      #        for tr in tbody.select('tr'):
+      #            print("Hello")
+  #+END_SRC
+
+  #+RESULTS:
+  :RESULTS:
+  # Out[294]:
+  :END:
+
+
+** Code Block to call the parse functions
+ #+BEGIN_SRC ipython :session :results raw drawer :exports both :results verbatim :noweb yes
+
+# Nasdaq Dubai data in the form of pandas' dataframes.
+# Refer documentation for the column and index names & types.
+
+#nasdaq_equities = parse_nasdaq_equities_html(nasdaq_equities_html)
+#nasdaq_futures = parse_nasdaq_equities_html(nasdaq_futures_html)
+#nasdaq_sukuk = parse_nasdaq_equities_html(nasdaq_sukuk_html)
+
+
+# Dubai Financial Market data in the form of pandas' dataframes.
+# Refer documentation for the column and index names & types.
+
+dfm_equities = parse_dfm_equities_html(dfm_equities_html)
+
+print(dfm_equities)
+
+
+
+#print(nasdaq_equities)
+ #+END_SRC
+
+ #+RESULTS:
+ :RESULTS:
+ # Out[295]:
+ :END:

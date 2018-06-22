@@ -1,0 +1,139 @@
+% Created 2018-06-21 Thu 12:21
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Vishakh Kumar}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={Vishakh Kumar},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.3.1 (Org mode 9.1.13)}, 
+ pdflang={English}}
+\begin{document}
+
+\tableofcontents
+
+
+
+
+\section{Obtaining html from source}
+\label{sec:orgf2cf69e}
+
+
+\begin{itemize}
+\item Why are we using selenium?
+The website we're trying to parse has dynamic content (it's live data that refreshes every 15 minutes), which requires us to open a webbrowser and actually render the page. Selenium allows us to open a webbrowser and actually render said dynamic content. Without selenium, we'd be stuck with a (rather prettily designed) html page without information.
+
+\item Why does this open a web browser?
+Selenium requires an actual webbrowser to do stuff. I'll change to a better solution soon but it's Firefox for now. Phantomjs seems to be a good option.
+\end{itemize}
+
+\begin{verbatim}
+def html_source(path):
+    # Import a web browser
+    from selenium import webdriver
+
+    # Open the webbrowser with a page
+    driver = webdriver.Firefox()
+    driver.get(path)
+
+    # Obtain html source from window
+    html = driver.page_source
+    return html
+\end{verbatim}
+\captionof{figure}{\label{orgc7a2de3}
+Function to take html content from a website}
+
+\begin{itemize}
+\item Which websites are we taking information from?
+Since this particular script is focused on Nasdaq Dubai, we'll be focusing on their market data, available \href{http://www.nasdaqdubai.com/marketdata/\#/equities}{here}. They have three main types of information - equities and funds, securities, and bonds.
+\end{itemize}
+
+\begin{verbatim}
+html_equities = html_source("http://www.nasdaqdubai.com/marketdata/#/equities")
+\end{verbatim}
+
+
+\section{Parsing html}
+\label{sec:org25f0c6f}
+
+\begin{verbatim}
+# <table class="table table-striped data-header">
+\end{verbatim}
+
+\begin{verbatim}
+def html_parse(html):
+    import bs4
+    import pandas as pd
+
+
+    soup = bs4.BeautifulSoup(html,"html5lib")
+    tables = soup.find_all('table')
+    for table in tables:
+        for tbody in table.select('tbody'):
+            print('------')
+            for tr in tbody.select('tr'):
+                print('++++++++++++++++++++++++++')
+                #print(tr)
+
+                # Company Information
+                full_name = tr.select('td[class="full_name ng-binding"]')[0].getText()
+                code = tr.select('td[class="code ng-binding"]')[0].getText()
+
+                # Yesterday's price and highs and lows
+                currency = tr.select('td[class="curr ng-binding"]')[0].getText()
+                previous_close = float(tr.select('td[class="previous_close ng-binding"]')[0].getText())
+                open_ = float(tr.select('td[class="open ng-binding"]')[0].getText())
+                high = float(tr.select('td[class="high ng-binding"]')[0].getText())
+                low = float(tr.select('td[class="low ng-binding"]')[0].getText())
+
+                # Bids and Offers
+                bid_qty = (tr.select('td[class="bid_qty ng-binding"]')[0].getText())
+                bid = (tr.select('td[class="bid ng-binding"]')[0].getText())
+                offer = (tr.select('td[class="offer ng-binding"]')[0].getText())
+                offer_qty = (tr.select('td[class="offer_qty ng-binding"]')[0].getText())
+
+                # Last traded price
+                last_traded_price = float(tr.select('td[class="last_traded_price ng-binding"]')[0].getText())
+                percentage_change = float(tr.select('td[class="percentage_change ng-binding"]')[0].getText())
+
+
+                dictionary = {"Company Name":full_name,
+                              "Code":code,
+                              "Currency":currency,
+                              "Previous Close":previous_close,
+                              "Open":open_,
+                              "High":high,
+                              "Low":low,
+                              "Bid Quantity":bid_qty,
+                              "Bid":bid,
+                              "Offer":offer,
+                              "Offer Quantity":offer_qty,
+                              "Last Traded Price":last_traded_price,
+                              "Percentage Change":percentage_change}
+                print(dictionary)
+                print('++++++++++++++++++++++++++')
+            print('------')
+\end{verbatim}
+\captionof{figure}{\label{org406c4ab}
+Function to parse the html content we get and return data as a pandas\(_{\text{frame}}\)}
+
+\begin{verbatim}
+stuff = html_parse(html)
+\end{verbatim}
+\end{document}

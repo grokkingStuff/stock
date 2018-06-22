@@ -1,0 +1,379 @@
+1529557581061	geckodriver	INFO	geckodriver 0.21.0
+1529557581067	geckodriver	INFO	Listening on 127.0.0.1:40383
+1529557582071	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.VZuZ7cvZpngE"
+1529557584077	Marionette	INFO	Listening on port 41291
+1529557584092	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529557601882	geckodriver	INFO	geckodriver 0.21.0
+1529557601886	geckodriver	INFO	Listening on 127.0.0.1:54833
+1529557602889	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.D7zNpd0v5r6Y"
+1529557605348	Marionette	INFO	Listening on port 43419
+1529557605409	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+JavaScript error: http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js, line 6: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js, line 6: NS_ERROR_NOT_INITIALIZED: 
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1529558638853	geckodriver	INFO	geckodriver 0.21.0
+1529558638858	geckodriver	INFO	Listening on 127.0.0.1:33657
+1529558639864	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.jJwrsTDZnjqN"
+1529558642450	Marionette	INFO	Listening on port 44765
+1529558642489	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529559299284	geckodriver	INFO	geckodriver 0.21.0
+1529559299288	geckodriver	INFO	Listening on 127.0.0.1:36265
+1529559300296	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.w6eR1bq1tmdg"
+1529559302927	Marionette	INFO	Listening on port 43629
+1529559303016	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://millejoh.github.io/emacs-ipython-notebook/_static/doctools.js, line 248: ReferenceError: DOCUMENTATION_OPTIONS is not defined
+1529559705908	geckodriver	INFO	geckodriver 0.21.0
+1529559705914	geckodriver	INFO	Listening on 127.0.0.1:40573
+1529559706919	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.oUtcxgVjV2Rr"
+1529559709655	Marionette	INFO	Listening on port 35249
+1529559709750	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1529560673332	geckodriver	INFO	geckodriver 0.21.0
+1529560673336	geckodriver	INFO	Listening on 127.0.0.1:45737
+1529560674343	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.9DGLwu259N4N"
+1529560676464	Marionette	INFO	Listening on port 42301
+1529560676570	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.nasdaqdubai.com/assets/js/securities-frameworks-min.js, line 1: TypeError: s is undefined
+JavaScript error: http://www.nasdaqdubai.com/assets/js/securities-frameworks-min.js, line 2: Error: You must pass a string or Handlebars AST to Handlebars.compile. You passed undefined
+JavaScript error: http://www.nasdaqdubai.com/assets/js/highstock.js, line 8: Error: Highcharts error #13: www.highcharts.com/errors/13
+JavaScript warning: https://www.investopedia.com/sites/default/modules/jquery_update/replace/jquery/1.10/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Sandbox: seccomp sandbox violation: pid 26864, tid 29908, syscall 58, args 140601028447591 140601204341552 140601204341560 341 0 140601203179520.
+Sandbox: seccomp sandbox violation: pid 26864, tid 29908, syscall 58, args 140600984690023 140601204341936 140601204341944 341 0 140601203179520.
+JavaScript error: http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js, line 6: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js, line 6: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js, line 6: NS_ERROR_NOT_INITIALIZED: 
+1529569231279	geckodriver	INFO	geckodriver 0.21.0
+1529569231284	geckodriver	INFO	Listening on 127.0.0.1:48429
+1529569232288	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.pcaJMETuHmsw"
+1529569234553	Marionette	INFO	Listening on port 33959
+1529569234615	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529569256420	geckodriver	INFO	geckodriver 0.21.0
+1529569256424	geckodriver	INFO	Listening on 127.0.0.1:48215
+1529569257433	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.02DjqUoZY78Z"
+1529569260028	Marionette	INFO	Listening on port 36361
+1529569260051	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1529572155934	geckodriver	INFO	geckodriver 0.21.0
+1529572155939	geckodriver	INFO	Listening on 127.0.0.1:44661
+1529572156944	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.AGmiVOBY6YJN"
+1529572164734	Marionette	INFO	Listening on port 34941
+1529572164809	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529572366374	geckodriver	INFO	geckodriver 0.21.0
+1529572366380	geckodriver	INFO	Listening on 127.0.0.1:52869
+1529572367387	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.xEGjY1AqWNF3"
+console.error: "Could not write session state file " (new Error("_initWorker called too early! Please read the session file from disk first.", "resource:///modules/sessionstore/SessionFile.jsm", 337)) "_initWorker/<@resource:///modules/sessionstore/SessionFile.jsm:337:15\n_initWorker@resource:///modules/sessionstore/SessionFile.jsm:330:12\n_postToWorker@resource:///modules/sessionstore/SessionFile.jsm:354:11\nwrite@resource:///modules/sessionstore/SessionFile.jsm:394:19\nwrite@resource:///modules/sessionstore/SessionFile.jsm:66:12\n_writeState@resource:///modules/sessionstore/SessionSaver.jsm:357:12\n_saveState@resource:///modules/sessionstore/SessionSaver.jsm:295:12\n_saveStateAsync@resource:///modules/sessionstore/SessionSaver.jsm:341:5\nsaveStateAsyncWhenIdle@resource:///modules/sessionstore/SessionSaver.jsm:192:9\n"
+1529572377350	Marionette	INFO	Listening on port 36255
+1529572377397	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529572406426	geckodriver	INFO	geckodriver 0.21.0
+1529572406581	geckodriver	INFO	Listening on 127.0.0.1:56689
+1529572407431	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.AYjGmscCxhbo"
+1529572419905	Marionette	INFO	Listening on port 36359
+1529572419990	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js, line 6: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js, line 6: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js, line 6: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js, line 6: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js, line 6: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js, line 6: NS_ERROR_NOT_INITIALIZED: 
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1529572531851	geckodriver	INFO	geckodriver 0.21.0
+1529572531856	geckodriver	INFO	Listening on 127.0.0.1:43463
+1529572532860	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.hB466zMYryHE"
+1529572542497	Marionette	INFO	Listening on port 42357
+1529572542565	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529572551273	geckodriver	INFO	geckodriver 0.21.0
+1529572551286	geckodriver	INFO	Listening on 127.0.0.1:49935
+1529572552284	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.cMumWhBsGlml"
+1529572560208	Marionette	INFO	Listening on port 41111
+1529572560251	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529572571422	geckodriver	INFO	geckodriver 0.21.0
+1529572571436	geckodriver	INFO	Listening on 127.0.0.1:38461
+1529572572431	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.3JtSsUFUZIQS"
+1529572580399	Marionette	INFO	Listening on port 37137
+1529572580439	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js, line 6: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js, line 6: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js, line 6: NS_ERROR_NOT_INITIALIZED: 
+1529574283470	geckodriver	INFO	geckodriver 0.21.0
+1529574283474	geckodriver	INFO	Listening on 127.0.0.1:43253
+1529574284481	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.yHkaLdoio5Kz"
+1529574287463	Marionette	INFO	Listening on port 40787
+1529574287513	Marionette	WARN	TLS certificate errors will be ignored for this session
+Marionette threw an error: TypeError: this.curBrowser.contentBrowser is null
+GeckoDriver.prototype.get@chrome://marionette/content/driver.js:1090:3
+
+JavaScript error: http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js, line 6: Error: [$injector:modulerr] Failed to instantiate module marketdataApp due to:
+[$injector:nomod] Module 'marketdataApp' is not available! You either misspelled the module name or forgot to load it. If registering a module ensure that you specify the dependencies as the second argument.
+http://errors.angularjs.org/1.2.14/$injector/nomod?p0=marketdataApp
+r/<@http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js:6:675
+r/<@http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js:6:8645
+e@http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js:6:8226
+r@http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js:6:8540
+l/<@http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js:6:15265
+o@http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js:6:1003
+l@http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js:6:15205
+Rt@http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js:6:16742
+i@http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js:6:6882
+rt@http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js:6:7096
+nt@http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js:6:6612
+@http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js:9:11539
+r@http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js:8:9254
+r/<@http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js:6:13949
+o@http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js:6:1108
+r@http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js:6:13933
+
+http://errors.angularjs.org/1.2.14/$injector/modulerr?p0=marketdataApp&p1=%5B%24injector%3Anomod%5D%20Module%20'marketdataApp'%20is%20not%20available!%20You%20either%20misspelled%20the%20module%20name%20or%20forgot%20to%20load%20it.%20If%20registering%20a%20module%20ensure%20that%20you%20specify%20the%20dependencies%20as%20the%20second%20argument.%0Ahttp%3A%2F%2Ferrors.angularjs.org%2F1.2.14%2F%24injector%2Fnomod%3Fp0%3DmarketdataApp%0Ar%2F%3C%40http%3A%2F%2Fwww.nasdaqdubai.com%2Fmarketdata%2Fassets%2Flib%2Fmin%2Fangular-min.js%3A6%3A675%0Ar%2F%3C%40http%3A%2F%2Fwww.nasdaqdubai.com%2Fmarketdata%2Fassets%2Flib%2Fmin%2Fangular-min.js%3A6%3A8645%0Ae%40http%3A%2F%2Fwww.nasdaqdubai.com%2Fmarketdata%2Fassets%2Flib%2Fmin%2Fangular-min.js%3A6%3A8226%0Ar%40http%3A%2F%2Fwww.nasdaqdubai.com%2Fmarketdata%2Fassets%2Flib%2Fmin%2Fangular-min.js%3A6%3A8540%0Al%2F%3C%40http%3A%2F%2Fwww.nasdaqdubai.com%2Fmarketdata%2Fassets%2Flib%2Fmin%2Fangular-min.js%3A6%3A15265%0Ao%40http%3A%2F%2Fwww.nasdaqdubai.com%2Fmarketdata%2Fassets%2Flib%2Fmin%2Fangular-min.js%3A6%3A1003%0Al%40http%3A%2F%2Fwww.nasdaqdubai.com%2Fmarketdata%2Fassets%2Flib%2Fmin%2Fangular-min.js%3A6%3A15205%0ARt%40http%3A%2F%2Fwww.nasdaqdubai.com%2Fmarketdata%2Fassets%2Flib%2Fmin%2Fangular-min.js%3A6%3A16742%0Ai%40http%3A%2F%2Fwww.nasdaqdubai.com%2Fmarketdata%2Fassets%2Flib%2Fmin%2Fangular-min.js%3A6%3A6882%0Art%40http%3A%2F%2Fwww.nasdaqdubai.com%2Fmarketdata%2Fassets%2Flib%2Fmin%2Fangular-min.js%3A6%3A7096%0Ant%40http%3A%2F%2Fwww.nasdaqdubai.com%2Fmarketdata%2Fassets%2Flib%2Fmin%2Fangular-min.js%3A6%3A6612%0A%40http%3A%2F%2Fwww.nasdaqdubai.com%2Fmarketdata%2Fassets%2Flib%2Fmin%2Fangular-min.js%3A9%3A11539%0Ar%40http%3A%2F%2Fwww.nasdaqdubai.com%2Fmarketdata%2Fassets%2Flib%2Fmin%2Fangular-min.js%3A8%3A9254%0Ar%2F%3C%40http%3A%2F%2Fwww.nasdaqdubai.com%2Fmarketdata%2Fassets%2Flib%2Fmin%2Fangular-min.js%3A6%3A13949%0Ao%40http%3A%2F%2Fwww.nasdaqdubai.com%2Fmarketdata%2Fassets%2Flib%2Fmin%2Fangular-min.js%3A6%3A1108%0Ar%40http%3A%2F%2Fwww.nasdaqdubai.com%2Fmarketdata%2Fassets%2Flib%2Fmin%2Fangular-min.js%3A6%3A13933%0A
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1529590142160	geckodriver	INFO	geckodriver 0.21.0
+1529590142166	geckodriver	INFO	Listening on 127.0.0.1:53057
+1529590143174	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.xccxyc6ojDsR"
+1529590145418	Marionette	INFO	Listening on port 38465
+1529590145504	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529590150743	geckodriver	INFO	geckodriver 0.21.0
+1529590150750	geckodriver	INFO	Listening on 127.0.0.1:35549
+1529590151756	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.OxcuXWdIY1oz"
+1529590153760	Marionette	INFO	Listening on port 37633
+1529590153775	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529590158610	geckodriver	INFO	geckodriver 0.21.0
+1529590158615	geckodriver	INFO	Listening on 127.0.0.1:55411
+1529590159620	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.bVi0P9Do2I67"
+1529590161620	Marionette	INFO	Listening on port 40711
+1529590161639	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js, line 6: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js, line 6: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js, line 6: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js, line 6: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js, line 6: NS_ERROR_NOT_INITIALIZED: 
+1529635971697	geckodriver	INFO	geckodriver 0.21.0
+1529635971701	geckodriver	INFO	Listening on 127.0.0.1:48749
+1529635972703	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.8uUqLHbaE0E1"
+1529635975868	Marionette	INFO	Listening on port 33173
+1529635975931	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529636027469	geckodriver	INFO	geckodriver 0.21.0
+1529636027475	geckodriver	INFO	Listening on 127.0.0.1:42425
+1529636028477	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.6hS8DMnApBKw"
+1529636031511	Marionette	INFO	Listening on port 45319
+1529636031608	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529636039187	geckodriver	INFO	geckodriver 0.21.0
+1529636039199	geckodriver	INFO	Listening on 127.0.0.1:49591
+1529636040191	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.z9D0mthglv7Y"
+1529636043430	Marionette	INFO	Listening on port 44451
+1529636043605	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: Highcharts error #13: www.highcharts.com/errors/13
+JavaScript warning: https://marketwatch.dfm.ae/?isRedirected=true, line 587: unreachable code after return statement
+1529636522632	geckodriver	INFO	geckodriver 0.21.0
+1529636522635	geckodriver	INFO	Listening on 127.0.0.1:56105
+1529636523639	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.CZeDhQuRB33P"
+1529636526829	Marionette	INFO	Listening on port 35741
+1529636526859	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529636531994	geckodriver	INFO	geckodriver 0.21.0
+1529636532012	geckodriver	INFO	Listening on 127.0.0.1:54845
+1529636533017	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.fjViMQAGIwd0"
+1529636538473	Marionette	INFO	Listening on port 37423
+1529636538584	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: Highcharts error #13: www.highcharts.com/errors/13
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+JavaScript error: http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js, line 6: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js, line 6: NS_ERROR_NOT_INITIALIZED: 
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1529636569489	geckodriver	INFO	geckodriver 0.21.0
+1529636569492	geckodriver	INFO	Listening on 127.0.0.1:53515
+1529636570497	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.yLv7iFWs1iO6"
+1529636572781	Marionette	INFO	Listening on port 38537
+1529636572822	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529636577956	geckodriver	INFO	geckodriver 0.21.0
+1529636577961	geckodriver	INFO	Listening on 127.0.0.1:45199
+1529636578961	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.0YelF1ECIiLk"
+1529636581494	Marionette	INFO	Listening on port 35895
+1529636581579	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: Highcharts error #13: www.highcharts.com/errors/13
+JavaScript warning: https://marketwatch.dfm.ae/?isRedirected=true, line 587: unreachable code after return statement
+1529640094184	geckodriver	INFO	geckodriver 0.21.0
+1529640094189	geckodriver	INFO	Listening on 127.0.0.1:32789
+1529640095191	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.bR3PMYan3E7k"
+1529640097924	Marionette	INFO	Listening on port 36983
+1529640098043	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://marketwatch.dfm.ae/?isRedirected=true, line 587: unreachable code after return statement
+1529640101731	geckodriver	INFO	geckodriver 0.21.0
+1529640101744	geckodriver	INFO	Listening on 127.0.0.1:39947
+1529640102734	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.MYWRIRKDvar0"
+1529640107036	Marionette	INFO	Listening on port 44921
+1529640107082	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: Highcharts error #13: www.highcharts.com/errors/13
+[Child 319, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /home/abuild/rpmbuild/BUILD/firefox-60.0.1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+1529641283357	geckodriver	INFO	geckodriver 0.21.0
+1529641283360	geckodriver	INFO	Listening on 127.0.0.1:49507
+1529641284368	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.F6PuQfm0wrdj"
+1529641287252	Marionette	INFO	Listening on port 36387
+1529641287289	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529641297828	geckodriver	INFO	geckodriver 0.21.0
+1529641297832	geckodriver	INFO	Listening on 127.0.0.1:41789
+1529641298836	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.HnBKxElBSQl7"
+1529641301679	Marionette	INFO	Listening on port 44713
+1529641301753	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529641313838	geckodriver	INFO	geckodriver 0.21.0
+1529641313843	geckodriver	INFO	Listening on 127.0.0.1:57193
+1529641314849	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.X4xlSvFSBhbW"
+1529641317965	Marionette	INFO	Listening on port 37549
+1529641318098	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529641333087	geckodriver	INFO	geckodriver 0.21.0
+1529641333093	geckodriver	INFO	Listening on 127.0.0.1:46481
+1529641334101	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.FZaMPVuHKOwu"
+1529641337524	Marionette	INFO	Listening on port 33703
+1529641337622	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://marketwatch.dfm.ae/?isRedirected=true, line 587: unreachable code after return statement
+1529641345910	geckodriver	INFO	geckodriver 0.21.0
+1529641345922	geckodriver	INFO	Listening on 127.0.0.1:40337
+1529641346921	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.aOZBeJRvq9NI"
+1529641351668	Marionette	INFO	Listening on port 37751
+1529641351823	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: Highcharts error #13: www.highcharts.com/errors/13
+1529641496582	geckodriver	INFO	geckodriver 0.21.0
+1529641496608	geckodriver	INFO	Listening on 127.0.0.1:57023
+1529641497591	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.vWFPNTQ6t2TU"
+1529641503283	Marionette	INFO	Listening on port 34911
+1529641503306	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://marketwatch.dfm.ae/?isRedirected=true, line 587: unreachable code after return statement
+1529641564379	geckodriver	INFO	geckodriver 0.21.0
+1529641564386	geckodriver	INFO	Listening on 127.0.0.1:38891
+1529641565386	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.iBqgM0sbRRg9"
+1529641568527	Marionette	INFO	Listening on port 37233
+1529641568610	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1529641642637	geckodriver	INFO	geckodriver 0.21.0
+1529641642642	geckodriver	INFO	Listening on 127.0.0.1:41809
+1529641643648	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.AjWO4seIJBIH"
+1529641646508	Marionette	INFO	Listening on port 46815
+1529641646563	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529641689325	geckodriver	INFO	geckodriver 0.21.0
+1529641689329	geckodriver	INFO	Listening on 127.0.0.1:33317
+1529641690332	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.E0dtmCzYumIN"
+1529641693251	Marionette	INFO	Listening on port 41003
+1529641693350	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1529643561889	geckodriver	INFO	geckodriver 0.21.0
+1529643561892	geckodriver	INFO	Listening on 127.0.0.1:35253
+1529643562894	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.FwiN6DjF5jAd"
+1529643565471	Marionette	INFO	Listening on port 33827
+1529643565538	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1529643595685	geckodriver	INFO	geckodriver 0.21.0
+1529643595688	geckodriver	INFO	Listening on 127.0.0.1:46235
+1529643596693	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ef04vXDEZoZA"
+1529643598761	Marionette	INFO	Listening on port 42917
+1529643598807	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529643626424	geckodriver	INFO	geckodriver 0.21.0
+1529643626428	geckodriver	INFO	Listening on 127.0.0.1:49005
+1529643627433	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.PkhblvIkDh5D"
+1529643629758	Marionette	INFO	Listening on port 41129
+1529643629859	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1529643658192	geckodriver	INFO	geckodriver 0.21.0
+1529643658196	geckodriver	INFO	Listening on 127.0.0.1:56911
+1529643659196	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.VW6MfDezLT2V"
+1529643662069	Marionette	INFO	Listening on port 43939
+1529643662122	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529643689324	geckodriver	INFO	geckodriver 0.21.0
+1529643689329	geckodriver	INFO	Listening on 127.0.0.1:35333
+1529643690331	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.LzVYkOiW8ROo"
+1529643693463	Marionette	INFO	Listening on port 36607
+1529643693550	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529643700607	geckodriver	INFO	geckodriver 0.21.0
+1529643700613	geckodriver	INFO	Listening on 127.0.0.1:46483
+1529643701614	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.UqfZvYEly4U6"
+1529643706108	Marionette	INFO	Listening on port 39157
+1529643706157	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529643712622	geckodriver	INFO	geckodriver 0.21.0
+1529643712674	geckodriver	INFO	Listening on 127.0.0.1:43653
+1529643713626	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.6a0KhlxmBmHg"
+console.error: "Could not write session state file " (new Error("_initWorker called too early! Please read the session file from disk first.", "resource:///modules/sessionstore/SessionFile.jsm", 337)) "_initWorker/<@resource:///modules/sessionstore/SessionFile.jsm:337:15\n_initWorker@resource:///modules/sessionstore/SessionFile.jsm:330:12\n_postToWorker@resource:///modules/sessionstore/SessionFile.jsm:354:11\nwrite@resource:///modules/sessionstore/SessionFile.jsm:394:19\nwrite@resource:///modules/sessionstore/SessionFile.jsm:66:12\n_writeState@resource:///modules/sessionstore/SessionSaver.jsm:357:12\n_saveState@resource:///modules/sessionstore/SessionSaver.jsm:295:12\n_saveStateAsync@resource:///modules/sessionstore/SessionSaver.jsm:341:5\nsaveStateAsyncWhenIdle@resource:///modules/sessionstore/SessionSaver.jsm:192:9\n"
+1529643718125	Marionette	INFO	Listening on port 36913
+1529643718159	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529643745458	geckodriver	INFO	geckodriver 0.21.0
+1529643745462	geckodriver	INFO	Listening on 127.0.0.1:40347
+1529643746480	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.WWHiSnLuvAAC"
+1529643749897	Marionette	INFO	Listening on port 39839
+1529643749942	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://www.nasdaqdubai.com/marketdata/assets/lib/min/angular-min.js, line 6: NS_ERROR_NOT_INITIALIZED: 
+1529643883153	geckodriver	INFO	geckodriver 0.21.0
+1529643883159	geckodriver	INFO	Listening on 127.0.0.1:56811
+1529643884158	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Zl4KD1YCejI8"
+1529643887192	Marionette	INFO	Listening on port 40965
+1529643887274	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://www.obeythetestinggoat.com/how-to-get-selenium-to-wait-for-page-load-after-a-click.html, line 335: TypeError: $(...).foundation is not a function
+JavaScript error: http://www.obeythetestinggoat.com/how-to-get-selenium-to-wait-for-page-load-after-a-click.html, line 339: TypeError: $(...).orbit is not a function
+[Child 8512, MediaPlayback #4] WARNING: Decoder=7fa701891020 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<mozilla::MozPromise<RefPtr<mozilla::MediaTrackDemuxer::SamplesHolder>, mozilla::MediaResult, true> > mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /home/abuild/rpmbuild/BUILD/firefox-60.0.1/dom/media/MediaDecoderStateMachine.cpp, line 3445
+[Child 8512, MediaPlayback #2] WARNING: Decoder=7fa701891020 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<mozilla::MozPromise<RefPtr<mozilla::MediaTrackDemuxer::SamplesHolder>, mozilla::MediaResult, true> > mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /home/abuild/rpmbuild/BUILD/firefox-60.0.1/dom/media/MediaDecoderStateMachine.cpp, line 3445
+[Child 8512, MediaPlayback #1] WARNING: Decoder=7fa701891020 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<mozilla::MozPromise<RefPtr<mozilla::MediaTrackDemuxer::SamplesHolder>, mozilla::MediaResult, true> > mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /home/abuild/rpmbuild/BUILD/firefox-60.0.1/dom/media/MediaDecoderStateMachine.cpp, line 3445
+[Child 8512, MediaPlayback #4] WARNING: Decoder=7fa701891020 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<mozilla::MozPromise<RefPtr<mozilla::MediaTrackDemuxer::SamplesHolder>, mozilla::MediaResult, true> > mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /home/abuild/rpmbuild/BUILD/firefox-60.0.1/dom/media/MediaDecoderStateMachine.cpp, line 3445
+[Child 8512, MediaPlayback #2] WARNING: Decoder=7fa701891020 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<mozilla::MozPromise<RefPtr<mozilla::MediaTrackDemuxer::SamplesHolder>, mozilla::MediaResult, true> > mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /home/abuild/rpmbuild/BUILD/firefox-60.0.1/dom/media/MediaDecoderStateMachine.cpp, line 3445
+[Child 8512, MediaPlayback #4] WARNING: Decoder=7fa701891020 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<mozilla::MozPromise<RefPtr<mozilla::MediaTrackDemuxer::SamplesHolder>, mozilla::MediaResult, true> > mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /home/abuild/rpmbuild/BUILD/firefox-60.0.1/dom/media/MediaDecoderStateMachine.cpp, line 3445
+[Child 8512, MediaPlayback #1] WARNING: Decoder=7fa701891020 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<mozilla::MozPromise<RefPtr<mozilla::MediaTrackDemuxer::SamplesHolder>, mozilla::MediaResult, true> > mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /home/abuild/rpmbuild/BUILD/firefox-60.0.1/dom/media/MediaDecoderStateMachine.cpp, line 3445
+[Child 8512, MediaPlayback #3] WARNING: Decoder=7fa701891020 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<mozilla::MozPromise<RefPtr<mozilla::MediaTrackDemuxer::SamplesHolder>, mozilla::MediaResult, true> > mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /home/abuild/rpmbuild/BUILD/firefox-60.0.1/dom/media/MediaDecoderStateMachine.cpp, line 3445
+[Child 8512, MediaPlayback #4] WARNING: Decoder=7fa701891020 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<mozilla::MozPromise<RefPtr<mozilla::MediaTrackDemuxer::SamplesHolder>, mozilla::MediaResult, true> > mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /home/abuild/rpmbuild/BUILD/firefox-60.0.1/dom/media/MediaDecoderStateMachine.cpp, line 3445
+[Child 8512, MediaPlayback #2] WARNING: Decoder=7fa701891020 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<mozilla::MozPromise<RefPtr<mozilla::MediaTrackDemuxer::SamplesHolder>, mozilla::MediaResult, true> > mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /home/abuild/rpmbuild/BUILD/firefox-60.0.1/dom/media/MediaDecoderStateMachine.cpp, line 3445
+[Child 8512, MediaPlayback #3] WARNING: Decoder=7fa701891020 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<mozilla::MozPromise<RefPtr<mozilla::MediaTrackDemuxer::SamplesHolder>, mozilla::MediaResult, true> > mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /home/abuild/rpmbuild/BUILD/firefox-60.0.1/dom/media/MediaDecoderStateMachine.cpp, line 3445
+[Child 8512, MediaPlayback #2] WARNING: Decoder=7fa701891020 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<mozilla::MozPromise<RefPtr<mozilla::MediaTrackDemuxer::SamplesHolder>, mozilla::MediaResult, true> > mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /home/abuild/rpmbuild/BUILD/firefox-60.0.1/dom/media/MediaDecoderStateMachine.cpp, line 3445
+[Child 8512, MediaPlayback #4] WARNING: Decoder=7fa701891020 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<mozilla::MozPromise<RefPtr<mozilla::MediaTrackDemuxer::SamplesHolder>, mozilla::MediaResult, true> > mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /home/abuild/rpmbuild/BUILD/firefox-60.0.1/dom/media/MediaDecoderStateMachine.cpp, line 3445
+[Child 8512, MediaPlayback #3] WARNING: Decoder=7fa701891020 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<mozilla::MozPromise<RefPtr<mozilla::MediaTrackDemuxer::SamplesHolder>, mozilla::MediaResult, true> > mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /home/abuild/rpmbuild/BUILD/firefox-60.0.1/dom/media/MediaDecoderStateMachine.cpp, line 3445
+[Child 8512, MediaPlayback #1] WARNING: Decoder=7fa701891020 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<mozilla::MozPromise<RefPtr<mozilla::MediaTrackDemuxer::SamplesHolder>, mozilla::MediaResult, true> > mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /home/abuild/rpmbuild/BUILD/firefox-60.0.1/dom/media/MediaDecoderStateMachine.cpp, line 3445
+[Child 8512, MediaPlayback #3] WARNING: Decoder=7fa701891020 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<mozilla::MozPromise<RefPtr<mozilla::MediaTrackDemuxer::SamplesHolder>, mozilla::MediaResult, true> > mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /home/abuild/rpmbuild/BUILD/firefox-60.0.1/dom/media/MediaDecoderStateMachine.cpp, line 3445
+[Child 8512, MediaPlayback #3] WARNING: Decoder=7fa701891020 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<mozilla::MozPromise<RefPtr<mozilla::MediaTrackDemuxer::SamplesHolder>, mozilla::MediaResult, true> > mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /home/abuild/rpmbuild/BUILD/firefox-60.0.1/dom/media/MediaDecoderStateMachine.cpp, line 3445
+[Child 8512, MediaPlayback #3] WARNING: Decoder=7fa701891020 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<mozilla::MozPromise<RefPtr<mozilla::MediaTrackDemuxer::SamplesHolder>, mozilla::MediaResult, true> > mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /home/abuild/rpmbuild/BUILD/firefox-60.0.1/dom/media/MediaDecoderStateMachine.cpp, line 3445
+[Child 8512, MediaPlayback #7] WARNING: Decoder=7fa7018917a0 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<mozilla::MozPromise<RefPtr<mozilla::MediaTrackDemuxer::SamplesHolder>, mozilla::MediaResult, true> > mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /home/abuild/rpmbuild/BUILD/firefox-60.0.1/dom/media/MediaDecoderStateMachine.cpp, line 3445
+[Child 8512, MediaPlayback #7] WARNING: Decoder=7fa7018917a0 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<mozilla::MozPromise<RefPtr<mozilla::MediaTrackDemuxer::SamplesHolder>, mozilla::MediaResult, true> > mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /home/abuild/rpmbuild/BUILD/firefox-60.0.1/dom/media/MediaDecoderStateMachine.cpp, line 3445
+[Child 8512, MediaPlayback #5] WARNING: Decoder=7fa7018917a0 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<mozilla::MozPromise<RefPtr<mozilla::MediaTrackDemuxer::SamplesHolder>, mozilla::MediaResult, true> > mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /home/abuild/rpmbuild/BUILD/firefox-60.0.1/dom/media/MediaDecoderStateMachine.cpp, line 3445
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientSourceOp::Msg___delete__ Route error: message sent to unknown actor ID
+
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientSourceOp::Msg___delete__ Route error: message sent to unknown actor ID
+
+1529654446119	geckodriver	INFO	geckodriver 0.21.0
+1529654446124	geckodriver	INFO	Listening on 127.0.0.1:54941
+1529654446147	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.omdOtO9NQmVn"
+1529654450157	Marionette	INFO	Listening on port 40297
+1529654450216	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529654462195	geckodriver	INFO	geckodriver 0.21.0
+1529654462200	geckodriver	INFO	Listening on 127.0.0.1:56863
+1529654463202	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.5uRXGydzWeX0"
+1529654469063	Marionette	INFO	Listening on port 45265
+1529654469332	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529654479269	geckodriver	INFO	geckodriver 0.21.0
+1529654479274	geckodriver	INFO	Listening on 127.0.0.1:46915
+1529654480275	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.699PqAzvfUmQ"
+1529654486527	Marionette	INFO	Listening on port 44399
+1529654486655	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529654732844	geckodriver	INFO	geckodriver 0.21.0
+1529654732865	geckodriver	INFO	Listening on 127.0.0.1:45479
+1529654733856	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.WkK60DUcJhJT"
+1529654736732	Marionette	INFO	Listening on port 34291
+1529654736780	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://marketwatch.dfm.ae/?isRedirected=true, line 587: unreachable code after return statement
+1529654751218	geckodriver	INFO	geckodriver 0.21.0
+1529654751223	geckodriver	INFO	Listening on 127.0.0.1:58659
+1529654752238	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.MQFUthGE5HMb"
+1529654759562	Marionette	INFO	Listening on port 36233
+1529654759611	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: Highcharts error #13: www.highcharts.com/errors/13
+1529654798502	geckodriver	INFO	geckodriver 0.21.0
+1529654798512	geckodriver	INFO	Listening on 127.0.0.1:36695
+1529654799517	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.uY4h4HOlsluh"
+1529654810416	Marionette	INFO	Listening on port 43463
+1529654810646	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://marketwatch.dfm.ae/?isRedirected=true, line 587: unreachable code after return statement
+1529654824890	geckodriver	INFO	geckodriver 0.21.0
+1529654824904	geckodriver	INFO	Listening on 127.0.0.1:36335
+1529654825903	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.iJAS8y3uWABR"
+1529654841697	Marionette	INFO	Listening on port 35123
+1529654841796	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.dfm.ae/Scripts/require.min.js, line 8: Error: Load timeout for modules: main2.1
+http://requirejs.org/docs/errors.html#timeout
+JavaScript error: , line 0: uncaught exception: Highcharts error #13: www.highcharts.com/errors/13
